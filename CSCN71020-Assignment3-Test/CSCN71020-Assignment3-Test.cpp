@@ -15,42 +15,42 @@ namespace CSCN71020Assignment3Test
 			char player1[20] = "rock";
 		    char player2[20] = "paper";
 			char* result = RockPaperScissors(player1, player2);
-			Assert::AreEqual(player2, result);
+			Assert::AreEqual("Player2", result);
 		}
 		TEST_METHOD(PaperRock)
 		{
 			char player1[20] = "paper";
 			char player2[20] = "rock";
 			char* result = RockPaperScissors(player1, player2);
-			Assert::AreEqual(player2, result);
+			Assert::AreEqual("Player1", result);
 		}
 		TEST_METHOD(ScissorsRock)
 		{
 			char player1[20] = "scissors";
 			char player2[20] = "rock";
 			char* result = RockPaperScissors(player1, player2);
-			Assert::AreEqual(player2, result);
+			Assert::AreEqual("Player2", result);
 		}
 		TEST_METHOD(RockScissors)
 		{
 			char player1[20] = "rock";
 			char player2[20] = "scissors";
 			char* result = RockPaperScissors(player1, player2);
-			Assert::AreEqual(player2, result);
+			Assert::AreEqual("Player1", result);
 		}
 		TEST_METHOD(PaperScissors)
 		{
 			char player1[20] = "paper";
 			char player2[20] = "scissors";
 			char* result = RockPaperScissors(player1, player2);
-			Assert::AreEqual(player2, result);
+			Assert::AreEqual("Player2", result);
 		}
 		TEST_METHOD(ScissorsPaper)
 		{
 			char player1[20] = "scissors";
 			char player2[20] = "paper";
 			char* result = RockPaperScissors(player1, player2);
-			Assert::AreEqual(player2, result);
+			Assert::AreEqual("Player1", result);
 		}
 		TEST_METHOD(DrawPaper)
 		{
